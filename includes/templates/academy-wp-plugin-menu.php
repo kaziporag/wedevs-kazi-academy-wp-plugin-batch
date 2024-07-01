@@ -31,7 +31,7 @@
 					foreach( $tags as $tag ) :
 
 					?>
-					<option value="<?php echo esc_attr($tag->term_id);?>" <?php selected( $tag->term_id, $selected_tag, false ); ?>>
+					<option value="<?php echo esc_attr($tag->term_id);?>" <?php selected( $tag->term_id, $selected_tag ); ?>>
 						<?php echo $tag->name; ?>
 					</option>
 					<?php endforeach; ?>

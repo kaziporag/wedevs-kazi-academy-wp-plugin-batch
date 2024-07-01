@@ -37,7 +37,6 @@ class weDevs_Academy_WP_Plugin_Admin_Menu {
 			$post_args['tax_query'] = array(
 				array(
 					'taxonomy'   => 'post_tag',
-					'name'      => 'filter_by_category',
 					'field' 	=> 'term_id',
 					'terms' 	=> $_GET['filter_by_tag'],
 				),
